@@ -1,88 +1,119 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progetti Tech | Claudio Baschieri</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Claudio Baschieri | Meccatronica</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-
-    <nav>
-        <div class="nav-container">
-            <div class="logo">CB<span>.</span>Tech</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#profilo">Profilo</a></li>
-                <li><a href="progetti.html">Progetti</a></li>
-                <li><a href="index.html#tecnologie">Tecnologie</a></li>
-            </ul>
-        </div>
+  <!-- Header / Menu -->
+  <header id="home">
+    <nav class="navbar">
+      <div class="nav-brand">Claudio Baschieri</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Chi sono</a></li>
+        <li><a href="#projects">Progetti</a></li>
+        <li><a href="#skills">Competenze</a></li>
+        <li><a href="#contact">Contatti</a></li>
+      </ul>
     </nav>
+    <div class="hero">
+      <h1>Ing. Meccanico Meccatronico</h1>
+      <p>Progettazione, automazione e controllo per sistemi industriali.</p>
+      <a href="#projects" class="btn">Vedi i progetti</a>
+    </div>
+  </header>
 
-    <header class="hero-small">
-        <div class="container">
-            <h1>Advanced Projects</h1>
-            <p>Soluzioni applicate per l'Industria 4.0 e la Meccatronica</p>
+  <!-- Sezione Chi sono -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>Chi sono</h2>
+      <p>
+        Laureato in ingegneria meccatronica, con forte interesse per la progettazione CAD 3D, 
+        i sistemi di automazione e il controllo di processo. 
+        Appassionato di robotica, sensoristica e soluzioni industriali innovative.
+      </p>
+      <ul class="info-list">
+        <li>🔧 Progettazione meccanica</li>
+        <li>⚡ Sistemi elettrici e di potenza</li>
+        <li>🤖 Automazione industriale</li>
+        <li>📊 Simulazioni e analisi</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Sezione Progetti -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Progetti</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Braccio robotico industriale</h3>
+          <p>Progetto di diploma: braccio robotico 3D con controllo Arduino e motori passo‑passo.</p>
+          <ul class="tags">
+            <li>CAD 3D</li>
+            <li>Arduino</li>
+            <li>Motori passo‑passo</li>
+          </ul>
         </div>
-    </header>
-
-    <main class="container">
-        
-        <div class="project-row">
-            <div class="project-image">
-                <img src="http://googleusercontent.com/image_collection/image_retrieval/11330183672092704528_0" alt="PLC Siemens TIA Portal">
-            </div>
-            <div class="project-text">
-                <span class="tag">Automazione</span>
-                <h3>Programmazione PLC & HMI</h3>
-                <p>Sviluppo di architetture di controllo basate su standard Siemens S7-1500. Progettazione di interfacce HMI per il monitoraggio in tempo reale dei flussi produttivi e della diagnostica di bordo macchina.</p>
-                <ul class="tech-list">
-                    <li>TIA Portal V18</li>
-                    <li>Linguaggio SCL/LAD</li>
-                    <li>WinCC Unified</li>
-                </ul>
-            </div>
+        <div class="project-card">
+          <h3>Sistema di automazione pneumatica</h3>
+          <p>Progettazione di un circuito pneumatico con attuatori e sensori per una linea di produzione.</p>
+          <ul class="tags">
+            <li>Pneumatica</li>
+            <li>Elettropneumatica</li>
+            <li>Multisim</li>
+          </ul>
         </div>
-
-        <div class="project-row reverse">
-            <div class="project-image">
-                <img src="http://googleusercontent.com/image_collection/image_retrieval/9215575416538268412_0" alt="Robotica Industriale">
-            </div>
-            <div class="project-text">
-                <span class="tag">Robotica</span>
-                <h3>Integrazione Cobot e Robotica</h3>
-                <p>Configurazione di celle robotizzate collaborative per operazioni di assemblaggio e pick&place. Studio della sicurezza (Safety) e interazione uomo-macchina nei contesti di produzione flessibile.</p>
-                <ul class="tech-list">
-                    <li>Universal Robots</li>
-                    <li>Cinematica Inversa</li>
-                    <li>Safety Sensors</li>
-                </ul>
-            </div>
+        <div class="project-card">
+          <h3>Manutenzione predittiva</h3>
+          <p>Progetto di monitoraggio vibrazioni e temperature per la manutenzione di macchinari.</p>
+          <ul class="tags">
+            <li>Sensori</li>
+            <li>Acquisizione dati</li>
+            <li>Analisi</li>
+          </ul>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="project-row">
-            <div class="project-image">
-                <img src="http://googleusercontent.com/image_collection/image_retrieval/9629028514435934628_0" alt="Digital Twin">
-            </div>
-            <div class="project-text">
-                <span class="tag">Innovazione</span>
-                <h3>Digital Twin & Simulazione</h3>
-                <p>Implementazione di gemelli digitali per la validazione virtuale dei processi. Riduzione dei tempi di commissioning e ottimizzazione delle traiettorie meccaniche tramite simulazione 3D avanzata.</p>
-                <ul class="tech-list">
-                    <li>Virtual Commissioning</li>
-                    <li>Analisi Dati</li>
-                    <li>Cloud Integration</li>
-                </ul>
-            </div>
-        </div>
+  <!-- Sezione Competenze -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Competenze</h2>
+      <div class="skills-grid">
+        <div class="skill-item">CAD 3D (SolidWorks / Fusion)</div>
+        <div class="skill-item">Automazione industriale</div>
+        <div class="skill-item">PLC e logica di controllo</div>
+        <div class="skill-item">Arduino e microcontrollori</div>
+        <div class="skill-item">Elettropneumatica</div>
+        <div class="skill-item">Analisi e simulazioni</div>
+      </div>
+    </div>
+  </section>
 
-    </main>
+  <!-- Sezione Contatti -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contatti</h2>
+      <p>
+        Puoi raggiungermi via email o sui social professionali.
+        Per un CV completo, scarica il PDF qui sotto.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:claudiobaschieri@email.com" class="btn btn-outline">📧 Scrivimi</a>
+        <a href="#" class="btn btn-outline">📄 Scarica CV</a>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>© 2026 Claudio Baschieri | Reggio Emilia | Specialist in Mechatronics</p>
-    </footer>
-
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Claudio Baschieri | Portfolio Meccatronica</p>
+  </footer>
 </body>
 </html>
