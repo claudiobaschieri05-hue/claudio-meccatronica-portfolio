@@ -1,64 +1,269 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Claudio Baschieri | Mechatronics Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Claudio Baschieri | Meccatronica & Automazione | Milano</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-
-    <nav>
-        <div class="nav-container">
-            <div class="logo">CB<span>.</span>Tech</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#territorio">ITS Maker</a></li>
-                <li><a href="#tecnologie">Tecnologie</a></li>
-            </ul>
-        </div>
+  <!-- Header Hero -->
+  <header id="home">
+    <nav class="navbar">
+      <div class="nav-brand">
+        <i class="fas fa-robot"></i> Claudio Baschieri
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#about"><i class="fas fa-user"></i> Profilo</a></li>
+        <li><a href="#projects"><i class="fas fa-project-diagram"></i> Progetti</a></li>
+        <li><a href="#skills"><i class="fas fa-cogs"></i> Competenze</a></li>
+        <li><a href="#experience"><i class="fas fa-briefcase"></i> Esperienza</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contatti</a></li>
+      </ul>
     </nav>
 
-    <header id="home" class="hero">
-        <h1>Claudio Baschieri</h1>
-        <p>Automation & Mechatronics Specialist</p>
-    </header>
+    <div class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Claudio Baschieri<br>
+          <span class="highlight">Meccatronico & Automazione</span>
+        </h1>
+        <p class="hero-subtitle">
+          Specializzato in robotica, IoT, PLC e progettazione CAD per l'industria 4.0<br>
+          <strong>Milano / Reggio Emilia</strong>
+        </p>
+        <div class="hero-stats">
+          <div class="stat"><span>50+</span> Progetti CAD</div>
+          <div class="stat"><span>3+</span> Anni esperienza</div>
+          <div class="stat"><span>10+</span> PLC programmati</div>
+        </div>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary"><i class="fas fa-eye"></i> Vedi Progetti</a>
+          <a href="#contact" class="btn btn-secondary"><i class="fas fa-download"></i> Scarica CV</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <main class="container">
-        <section id="tecnologie">
-            <div class="section-header">
-                <h2>Stack Tecnologico</h2>
+  <!-- Profilo -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fas fa-user-astronaut"></i> Profilo Professionale</h2>
+        <p>Meccatronico con passione per l'automazione e la robotica</p>
+      </div>
+      
+      <div class="profile-grid">
+        <div class="profile-text">
+          <h3>Esperto in soluzioni meccatroniche per l'industria</h3>
+          <p>
+            Laureato in <strong>Ingegneria Meccanica e Meccatronica</strong> con focus su automazione 
+            industriale, robotica collaborativa e IoT. Operativo tra <strong>Milano</strong> e 
+            <strong>Reggio Emilia</strong>, dove l'industria metalmeccanica è tra le più avanzate d'Italia.
+          </p>
+          
+          <div class="profile-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span><strong>Lombardia / Emilia-Romagna</strong> – Distretto metalmeccanico</span>
             </div>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fas fa-microchip icon"></i>
-                    <h3>PLC & HMI</h3>
-                    <p>Siemens TIA Portal, S7-1500, WinCC. Programmazione di cicli complessi.</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-robot icon"></i>
-                    <h3>Robotica</h3>
-                    <p>Integrazione di robot antropomorfi e Cobot (Universal Robots, Fanuc).</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-network-wired icon"></i>
-                    <h3>IoT & Cloud</h3>
-                    <p>Protocolli MQTT, OPC-UA e manutenzione predittiva con Node-RED.</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-drafting-compass icon"></i>
-                    <h3>CAD 3D</h3>
-                    <p>Progettazione meccanica assistita per prototipazione rapida.</p>
-                </div>
+            <div class="highlight-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span><strong>Laurea Magistrale</strong> – Meccanica/Meccatronica</span>
             </div>
-        </section>
-    </main>
+            <div class="highlight-item">
+              <i class="fas fa-tools"></i>
+              <span><strong>Esperto CAD 3D</strong> – SolidWorks, Inventor, Fusion 360</span>
+            </div>
+          </div>
+        </div>
+        <div class="profile-image">
+          <div class="image-placeholder">
+            <i class="fas fa-user"></i>
+            <span>Aggiungi tua foto professionale</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>© 2026 Claudio Baschieri | Reggio Emilia</p>
-    </footer>
+  <!-- Progetti Dettagliati -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fas fa-project-diagram"></i> Progetti Principali</h2>
+        <p>Risultati concreti per l'industria</p>
+      </div>
+      
+      <div class="projects-grid">
+        <div class="project-card featured">
+          <div class="project-image">
+            <i class="fas fa-robot"></i>
+            <span>Braccio robotico</span>
+          </div>
+          <div class="project-content">
+            <h3>Braccio Robotico 6 Assi</h3>
+            <p><strong>Progetto di tesi:</strong> Progettazione e controllo di braccio robotico con 6 gradi di libertà. Programmazione PLC Siemens S7‑1200 + HMI.</p>
+            <div class="project-results">
+              <span class="result"><i class="fas fa-check"></i> Precisione ±0.5mm</span>
+              <span class="result"><i class="fas fa-check"></i> Ciclo 3.2s</span>
+            </div>
+            <div class="project-tech">
+              <span>PLC Siemens</span>
+              <span>Robotica</span>
+              <span>CAD SolidWorks</span>
+              <span>HMI</span>
+            </div>
+          </div>
+        </div>
 
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-microchip"></i>
+            <span>IoT Gateway</span>
+          </div>
+          <div class="project-content">
+            <h3>Gateway IoT per Industria 4.0</h3>
+            <p>Sistema di acquisizione dati da sensori industriali con trasmissione MQTT verso cloud AWS IoT. Dashboard web per analisi predittiva.</p>
+            <div class="project-tech">
+              <span>MQTT</span>
+              <span>AWS IoT</span>
+              <span>Node‑RED</span>
+              <span>Dashboard</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-cube"></i>
+            <span>Prototipo CAD</span>
+          </div>
+          <div class="project-content">
+            <h3>Prototipo Stampato 3D</h3>
+            <p>Progettazione e prototipazione di sistema di presa pneumatica per robot collaborativo UR3. Simulazione FEM e stress analysis.</p>
+            <div class="project-tech">
+              <span>Fusion 360</span>
+              <span>Stampa 3D</span>
+              <span>FEM Analysis</span>
+              <span>UR Cobot</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Competenze Tecniche -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fas fa-cogs"></i> Competenze Tecniche</h2>
+        <p>Stack tecnologico completo per meccatronica industriale</p>
+      </div>
+      
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4>Automazione</h4>
+          <div class="skill-tags">
+            <span>PLC Siemens TIA Portal</span>
+            <span>PLC Allen Bradley</span>
+            <span>HMI WinCC</span>
+            <span>SCADA</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Robotica & IoT</h4>
+          <div class="skill-tags">
+            <span>Robotica Industriale</span>
+            <span>Universal Robots</span>
+            <span>MQTT / OPC UA</span>
+            <span>Node‑RED</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>CAD & Progettazione</h4>
+          <div class="skill-tags">
+            <span>SolidWorks</span>
+            <span>Fusion 360</span>
+            <span>Autodesk Inventor</span>
+            <span>Ansys Simulation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Esperienza Locale -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fas fa-industry"></i> Contesto Locale</h2>
+        <p>Esperto del distretto metalmeccanico Lombardia‑Emilia</p>
+      </div>
+      
+      <div class="experience-grid">
+        <div class="experience-item">
+          <h4><i class="fas fa-map-marker-alt"></i> Milano, Lombardia</h4>
+          <p>Centro dell'automazione e robotica italiana. Collaborazioni con aziende del settore automotive e packaging.</p>
+        </div>
+        <div class="experience-item">
+          <h4><i class="fas fa-tools"></i> Reggio Emilia</h4>
+          <p>Distretto meccanico tra i più importanti d'Europa. Esperienza con macchine utensili, robotica e automazione.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contatti -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fas fa-envelope"></i> Contattami</h2>
+        <p>Disponibile per progetti in Lombardia ed Emilia‑Romagna</p>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Claudio Baschieri</h3>
+          <p>Meccatronico Freelance</p>
+          <div class="contact-details">
+            <div class="detail">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Milano, Lombardia</span>
+            </div>
+            <div class="detail">
+              <i class="fas fa-phone"></i>
+              <span>+39 123 456 7890</span>
+            </div>
+            <div class="detail">
+              <i class="fas fa-envelope"></i>
+              <span>claudiobaschieri@email.com</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary">📄 Scarica CV Completo</a>
+        </div>
+        <div class="contact-form">
+          <form>
+            <input type="text" placeholder="Il tuo nome" required />
+            <input type="email" placeholder="La tua email" required />
+            <textarea placeholder="Il tuo messaggio..." rows="5" required></textarea>
+            <button type="submit" class="btn btn-primary full-width">Invia Messaggio</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Claudio Baschieri | Meccatronica & Automazione | <a href="#">Privacy Policy</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
